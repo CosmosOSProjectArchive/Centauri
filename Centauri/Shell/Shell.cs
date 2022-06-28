@@ -65,6 +65,8 @@ namespace Centauri.Shell
         }
         private static void Handler(ref List<string> arguments)
         {
+            // I have a slight feeling this isn't the best way to do this, but oh well
+
             switch(arguments[0].ToLower())
             {
                 case "pwd":
