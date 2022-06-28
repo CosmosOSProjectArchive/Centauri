@@ -7,7 +7,8 @@ Because I'm extra.<br>
 I was bored, that's why I made this.<br>
 I'll update this occasionally.<br>
 ## Todo
-Graphical Terminal
+Add scrolling.<br>
+Graphical Terminal.<br>
 ## Screenshots
 ![Alt text](Screenshots/onboot.png?raw=true "Boot")
 ![Alt text](Screenshots/commands.png?raw=true "Commands")
