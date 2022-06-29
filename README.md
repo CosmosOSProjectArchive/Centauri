@@ -11,6 +11,7 @@ I got the idea for the logging thing from this guy:<br>
 https://github.com/rxi/log.c
 I didn't use his code, but use the design, so I though I'd credit him.<br>
 ## Todo
+Fix the walmart neofetch code (its disgusting) <br>
 Add scrolling.<br>
 Graphical Terminal.<br>
 ## Screenshots
