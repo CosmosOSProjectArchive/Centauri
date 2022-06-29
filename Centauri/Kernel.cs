@@ -48,6 +48,8 @@ namespace Centauri
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("] ");
 
+                
+
                 string input = Console.ReadLine();
 
                 Shell.Shell.Run(input);
