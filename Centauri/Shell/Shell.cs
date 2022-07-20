@@ -11,13 +11,20 @@ using Core = Cosmos.Core;
 using HAL = Cosmos.HAL;
 using Cosmos.System.FileSystem.VFS;
 using Cosmos.System.FileSystem;
+using Cosmos.HAL.Audio;
+using Cosmos.HAL.Drivers.PCI.Audio;
+using Cosmos.System.Audio;
+using Cosmos.System.Audio.DSP.Processing;
+using Cosmos.System.Audio.IO;
+using IL2CPU.API.Attribs;
 
 namespace Centauri.Shell
 {
     public class Shell
     {
+
         private static List<string> clipboard = new List<string>();
-        private static void CopyDirectory(string sourcePath, string targetPath)
+        /*private static void CopyDirectory(string sourcePath, string targetPath)
         {
             //Now Create all of the directories
             foreach (string dirPath in Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories))
@@ -30,7 +37,7 @@ namespace Centauri.Shell
             {
                 File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
             }
-        }
+        }*/
         public static void Run(string command)
         {
             List<string> arguments = new List<string>();
@@ -184,6 +191,7 @@ namespace Centauri.Shell
                     {
                         Log.Error("Insufficent number of arguments");
                     }
+                    break;
                     break;
                 case "info":
                     Log.Error("Command unsupported, waiting for a FileInfo plug (I could do something but im lazy)");

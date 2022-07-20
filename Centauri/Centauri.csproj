@@ -18,7 +18,21 @@
         <Description>Use VMware Player or Workstation to deploy and debug.</Description>
         <PxeInterface>192.168.0.8</PxeInterface>
         <DebugEnabled>False</DebugEnabled>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <CompileVBEMultiboot>True</CompileVBEMultiboot>
+        <VBEResolution>800x600x32</VBEResolution>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\bg.bmp" />
+      <None Remove="Assets\Font1.bf" />
+      <None Remove="initialddejavu.wav" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Assets\bg.bmp" />
+      <EmbeddedResource Include="Assets\Font1.bf" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Cosmos.Build" Version="0-*" NoWarn="NU1604" />
